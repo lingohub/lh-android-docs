@@ -5,8 +5,6 @@ Master translation and connect with world leading translators. Automate and opti
 ## Features
 
 - Over-The-Air localization update
-- Language switching at runtime
-- Method swizzling for easy integration 
 - Localization testing using preproduction builds
 
 ## Requirements
