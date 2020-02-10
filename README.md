@@ -47,7 +47,7 @@ public class MyApplication extends Application {
         // Add following line only if you want to use pre-production bundles.
         LingoHub.setPreproductionEnabled();
         
-        // Fetch the latest translations from LingoHuib (can be called anywhere)
+        // Fetch the latest translations from LingoHub (can be called anywhere)
         LingoHub.fetchStrings()
     }
     ...
