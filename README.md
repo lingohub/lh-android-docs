@@ -2,8 +2,6 @@
 
 [![](https://jitpack.io/v/com.lingohub/lh-android-framework.svg)](https://jitpack.io/#com.lingohub/lh-android-framework)
 
-Master translation and connect with world leading translators. Automate and optimize your translation workflow with [LingoHub](https://lingohub.com).
-
 ## Features
 
 - Over-The-Air localization update
