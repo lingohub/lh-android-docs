@@ -13,10 +13,24 @@ Master translation and connect with world leading translators. Automate and opti
 
 ## Installation
 
+Add the jitpack maven repository to your top level .gradle file:
+
+```groovy
+allprojects {
+    repositories {
+        ...
+        maven {
+            url 'https://jitpack.io'
+        }
+    }
+}
+```
+
+Now, add the LingoHub dependeny to your application level .gradle file:
 ```groovy
 dependencies {
     ...
-    implementation('com.lingohub.sdk:1.0.0-alpha01') {
+    implementation('com.lingohub.sdk:1.0.0') {
         transitive = true
     }
 }
@@ -40,7 +54,7 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        LingoHub.init(this, "<api key>", "<project id>">);
+        LingoHub.configure(this, "<api key>", "<project id>">);
     
         // Add following line only if you want to use pre-production bundles.
         LingoHub.setPreproductionEnabled();
