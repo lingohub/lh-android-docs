@@ -69,14 +69,12 @@ public class MyApplication extends Application {
 LingoHub needs to be wrapped around the activity context in order to replace strings.
 We recommend implementing a BaseActivity class from which all your other Activity classes extend.
 
-```java
-abstract public class BaseActivity extends AppCompatActivity {
+```kotlin
+abstract class BaseActivity : AppCompatActivity() {
 
-    @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(LingoHub.INSTANCE.wrap(newBase));
+    override fun attachBaseContext(newBase: Context) {
+        super.attachBaseContext(LingoHub.wrap(newBase))
     }
-    
 }
 ```
 
