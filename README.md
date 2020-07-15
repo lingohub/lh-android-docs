@@ -51,7 +51,7 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        LingoHub.configure(this, "asd", "pr_488c1a64-08ad-470e-859b-9983caeda6b8")
+        LingoHub.configure(this, "<api key>", "<project id>")
         
         // Add following line only if you want to use pre-production bundles.
         LingoHub.setPreproductionEnabled()
