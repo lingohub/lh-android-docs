@@ -76,9 +76,9 @@ abstract class BaseActivity : AppCompatActivity() {
 That's it!
 
 In case you are loading strings from parts of your application where LingoHub is not injected (e.g. custom views) you can load strings manually:
-```java
-LingoHubResources lingoHubResources = new LingoHubResources(context);
-String myString = lingoHubResources.getString(R.string.my_string);
+```kotlin
+val lingoHubResources = LingoHubResources(this)
+val myString = lingoHubResources.getString(R.string.my_string)
 ```
 
 
@@ -86,8 +86,8 @@ String myString = lingoHubResources.getString(R.string.my_string);
 
 If you would like to test your localizations before submitting a new package, enable preproduction mode.
 
-```java
-LingoHub.setPreproductionEnabled();
+```kotlin
+LingoHub.setPreproductionEnabled()
 ```
 
 ## Support
