@@ -40,7 +40,7 @@ dependencies {
 
 ### Configuration
 
-Configure the LingoHub SDK in your `AppDelegate` with:
+Configure the LingoHub SDK in your `Application` class with:
 
 - *Application Context*
 - *API Key* 
