@@ -51,9 +51,10 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        
         LingoHub.configure(this, "<api key>", "<project id>")
         
-        // Add following line only if you want to use pre-production bundles.
+        // Add following line only if you want to use pre-production packages.
         LingoHub.setPreproductionEnabled()
         
         // Fetch the latest translations from LingoHub
