@@ -30,9 +30,7 @@ Now, add the LingoHub dependeny to your application level .gradle file:
 ```groovy
 dependencies {
     ...
-    implementation('com.lingohub:lh-android-sdk:1.0.0') {
-        transitive = true
-    }
+    implementation 'com.lingohub:lh-android-sdk:1.0.0'
 }
 ```
 
