@@ -1,6 +1,6 @@
 # LingoHub Android SDK
 
-[![](https://jitpack.io/v/com.lingohub/lh-android-framework.svg)](https://jitpack.io/#com.lingohub/lh-android-framework)
+[![](https://jitpack.io/v/com.lingohub/lh-android-sdk.svg)](https://jitpack.io/#com.lingohub/lh-android-sdk)
 
 ## Features
 
@@ -30,7 +30,7 @@ Now, add the LingoHub dependeny to your application level .gradle file:
 ```groovy
 dependencies {
     ...
-    implementation 'com.lingohub:lh-android-sdk:1.0.0'
+    implementation 'com.lingohub:lh-android-sdk:1.0.0-beta01'
 }
 ```
 
