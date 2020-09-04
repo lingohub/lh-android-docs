@@ -33,7 +33,7 @@ dependencies {
     implementation 'com.lingohub:lh-android-sdk:x.y.z'
 }
 ```
-(Please replace x.y.z with the latest version numbers: [![](https://jitpack.io/v/com.lingohub/lh-android-sdk.svg)](https://jitpack.io/#com.lingohub/lh-android-sdk))
+(Please replace ```x.y.z``` with the latest version numbers: [![](https://jitpack.io/v/com.lingohub/lh-android-sdk.svg)](https://jitpack.io/#com.lingohub/lh-android-sdk))
 
 ## Usage
 
