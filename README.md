@@ -69,6 +69,11 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(LingoHub.wrap(newBase))
     }
+    
+    override fun getResources(): Resources {
+        return LingoHub.wrap(baseContext).resources
+    }
+
 }
 ```
 
