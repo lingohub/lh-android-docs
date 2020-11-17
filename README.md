@@ -85,7 +85,15 @@ In case you are loading strings from parts of your application where LingoHub is
 val lingoHubResources = LingoHubResources(this)
 val myString = lingoHubResources.getString(R.string.my_string)
 ```
-
+or if you need to load strings provided via custom attributes:
+```kotlin
+val lingoHubResources = LingoHubResources(context)
+val typedArray = context.theme.obtainStyledAttributes(attrs, R.styleable.PieChart, 0, 0)
+val stringId = typedArray.getResourceId(R.styleable.PieChart_myString, -1)
+if(stringId != -1){
+    textView.text = lingoHubResources.getString(stringId)
+}
+```
 
 ### Preproduction mode
 
