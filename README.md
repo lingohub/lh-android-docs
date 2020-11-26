@@ -103,6 +103,24 @@ If you would like to test your localizations before submitting a new package, en
 LingoHub.setPreproductionEnabled()
 ```
 
+### Troubleshooting
+
+If you can't get the SDK to work, use the LingoHubLogger class to find out the cause of the problem.
+
+```kotlin
+LingoHub.setLogger(object : LingoHubLogger {
+
+    override fun onInfo(message: String) {
+        Log.d("LH SDK", message)
+    }
+    
+    override fun onError(error: String, cause : Throwable?) {
+        Log.e("LH SDK", error, cause)
+    }
+   
+})
+```
+
 ## Support
 
 For bug reports, please create a new Issue right here on Github. Otherwise have a look at our [Contact options](https://lingohub.com/support)
