@@ -67,13 +67,11 @@ We recommend implementing a BaseActivity class from which all your other Activit
 ```kotlin
 abstract class BaseActivity : AppCompatActivity() {
 
-    override fun attachBaseContext(newBase: Context) {
-        super.attachBaseContext(LingoHub.wrap(newBase))
+    private val lingohubDelegate: AppCompatDelegate by lazy {
+        LingoHub.getAppCompatDelegate(this, super.getDelegate())
     }
     
-    override fun getResources(): Resources {
-        return LingoHub.wrap(baseContext).resources
-    }
+    override fun getDelegate() = lingohubDelegate
 
 }
 ```
