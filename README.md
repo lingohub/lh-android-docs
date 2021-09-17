@@ -93,6 +93,14 @@ if(stringId != -1){
 }
 ```
 
+### Language switching
+
+If you would like to change the language of your app at runtime, you can use the LingoHub SDK for it.
+
+```kotlin
+LingoHub.setLocale(locale)
+```
+
 ### Preproduction mode
 
 If you would like to test your localizations before submitting a new package, enable preproduction mode.
